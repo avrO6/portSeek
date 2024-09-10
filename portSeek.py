@@ -1,5 +1,6 @@
 import socket
 import threading
+import argparse
 
 # Códigos ANSI para colores
 ROJO = "\033[31m"
@@ -25,7 +26,14 @@ def escanear_puertos(ip, puerto):
 
 def main():
     
-    ip = input("Indica la IP que quieres escanear: ")
+    # Crear el parser de argumentos
+    parser = argparse.ArgumentParser(description="Escáner de puertos simple.")
+    parser.add_argument("ip", help="Dirección IP del host a escanear")
+    
+    # Parsear los argumentos de la línea de comandos
+    args = parser.parse_args()
+    ip = args.ip
+
     
     # Creamos una lista para almacenar los hilos
     hilos = []
