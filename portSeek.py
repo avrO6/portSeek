@@ -30,6 +30,7 @@ def main():
     # Creamos una lista para almacenar los hilos
     hilos = []
     
+    # Creamos y ejecutamos multiple hilos
     for puerto in range (1,65535):
         # Creamos un hilo para cada puerto y lo agregamos a la lista
         hilo = threading.Thread(target=escanear_puertos, args=(ip, puerto))
