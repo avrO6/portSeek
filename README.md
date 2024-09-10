@@ -1,7 +1,7 @@
 # portSeek
- Escaner de puertos abiertos
+ Escaner de puertos abiertos.
 
- ## Uso
+ ## Ejecución
 
  ``` bash
     python ./portSeek [ip]
