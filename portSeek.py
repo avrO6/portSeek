@@ -33,7 +33,6 @@ def main():
     # Parsear los argumentos de la línea de comandos
     args = parser.parse_args()
     ip = args.ip
-
     
     # Creamos una lista para almacenar los hilos
     hilos = []
