@@ -24,6 +24,7 @@ def escanear_puertos(ip, puerto):
         puertos.append(puerto)
         sock.close
 
+
 def main():
     
     # Crear el parser de argumentos
